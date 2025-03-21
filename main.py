@@ -1,4 +1,12 @@
-# dataset link: https://www.kaggle.com/datasets/deepu1109/star-dataset 
+"""
+This is classification of a real world star dataset.
+
+dataset link: https://www.kaggle.com/datasets/deepu1109/star-dataset 
+
+I used Ordinal Encoder from scikitlearn to clean up this dataset.
+I trained KNearestNeighbors on this dataset.
+
+"""
 
 import pandas as pd
 import numpy as np
@@ -7,6 +15,8 @@ from sklearn.preprocessing import OrdinalEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score
+
+# DATA SECTION
 
 df = pd.read_csv("/Users/Username/Downloads/star_spreadsheet.csv")
 starTemp = np.array(df["Temperature (K)"]) # cutting the cake slice of the whole star spreadsheet to show temp
@@ -74,7 +84,7 @@ X = np.array(df[['Temperature (K)', 'Luminosity(L/Lo)',
 
 X_train,X_test,y_train,y_test = train_test_split(X, y, test_size=0.25, shuffle=True)
 
-# step two: picking the algorithm
+# MACHINE LEARNING SECTION | step two: picking the algorithm
 algo = KNeighborsClassifier(1) # 1 is the best for this.
 
 # step three: Doing the training
