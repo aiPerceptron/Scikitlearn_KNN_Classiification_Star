@@ -17,7 +17,7 @@ Before I could start classifying the star dataset, I had an issue. Two of the pr
 
 After I fixed the star dataset, I classified the it in three steps. First I split the data, using Scikit-learn. Then, I graphed the split data, using Matplotlib. Finally, I trained my data on KNearestNeighbors, using Scikit-learn, to predict the type of star. This allows me to show the star dataset in a visual way, while practicing my machine learning skills. 
 
-# Graphs of the Iris dataset
+# Graphs of the Star dataset
 ## Star Tempurature 
 ![Star Tempurature](startemp.png)
 
