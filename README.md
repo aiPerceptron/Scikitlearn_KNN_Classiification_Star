@@ -23,7 +23,7 @@ After I fixed the star dataset, I classified the it in three steps. First I spli
 
 # Analysis
 
-The KNearestNeighbors algorithm was being really inaccurate(30-60%, so I tried to fix it by lowering the amount of neighbors it was comparing itself to. When I lowered it to one, it got answers that were 40-80% accurate, but still not perfect
+The KNearestNeighbors algorithm was being really inaccurate (30-60%), so I tried to fix it by lowering the amount of neighbors it was comparing itself to. When I lowered it to one, it got answers that were 40-80% accurate, but still not perfect
 
 # Conclusion 
 
